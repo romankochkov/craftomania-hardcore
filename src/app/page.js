@@ -1,95 +1,68 @@
 import Image from "next/image";
+import 'bootstrap/dist/css/bootstrap-grid.css';
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <nav>
+        <div className="container">
+          <div className={styles.navbar}>
+            <div className="d-flex justify-content-between">
+              <div className={styles.logo}>
+                <a href="/">Craftomania</a>
+                <br className="d-block d-sm-none"></br>
+                <span className={`${styles.separator} d-none d-sm-inline-flex`}>｜</span>
+                <span className={styles.hardcore}>HARDCORE</span>
+              </div>
+              <div>
+                <div className="d-flex justify-content-end">
+                  <div className={styles.link}>Вики</div>
+                  <div className={styles.link}>Донат</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </nav>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section className={styles.section1}>
+        <div className="container">
+          <div className="row">
+            <div className="col-9">
+              <div className={styles.start}>
+                <Image
+                  src="/wallpaper.png"
+                  fill={true}
+                  quality={100}
+                  alt="Wallpaper"
+                  className={styles.wallpaper} />
+                <div className={styles.info}>
+                  <div className="d-flex justify-content-between">
+                    <div className={styles.ip}>
+                      mc.craftomania.net
+                    </div>
+                    <div>
+                      <div className={styles.phase}>
+                        ФАЗА III
+                      </div>
+                      <div className={styles.date}>
+                        ВАЙП ЧЕРЕЗ 2 ДНЯ
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className={styles.rating}>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
