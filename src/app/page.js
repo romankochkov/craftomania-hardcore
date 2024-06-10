@@ -23,8 +23,27 @@ export default function Home() {
           quality={100} />
 
         <header className={styles.header}>
-          <nav>
+          <nav className={styles.nav}>
+            <div className="container">
+              <div className="row">
+                <div className="col-12">
+                  <div className="d-flex justify-content-between">
+                    <Image
+                      className={styles.logo}
+                      src="/logo.gif"
+                      width={200}
+                      height={40}
+                      alt="Logo"
+                      quality={100} />
+                    <div className="d-flex justify-content-end">
+                      <div className={styles.rules}>Правила</div>
+                      <div className={styles.button}>Начать играть</div>
+                    </div>
 
+                  </div>
+                </div>
+              </div>
+            </div>
           </nav>
         </header>
 
@@ -36,10 +55,14 @@ export default function Home() {
                 <h1>Hardcore</h1>
                 <h2>Умри, живи и снова умри</h2>
                 <h4>Данный лозунг используется исключительно в контексте<br></br>игрового проекта и не несет никакого призыва к действию</h4>
-                <div className={styles.ip}>
-                  <div className={styles.host}>mc.craftomania.net</div>
-                  <div className={styles.version}>1.20.6</div>
+                <div>
+                  <div className={styles.ip}>
+                    <div className={styles.host}>mc.craftomania.net</div>
+                    <div className={styles.version}>1.20.6</div>
+                  </div>
+                  {/*<span className={styles.online}></span>*/}
                 </div>
+
               </div>
               <div className="col-6">
                 <div className="d-flex justify-content-center">
@@ -74,6 +97,30 @@ export default function Home() {
                 </div>
               </div>
 
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="container">
+            <div className="row">
+              <div className="col-5"></div>
+              <div className="col-12">
+                <div className={styles.prime}>
+                  <div className="row g-0">
+                    <div className="col-4">
+
+                    </div>
+                    <div className="col-8">
+                      <div className={styles.title}>PRIME<span className={styles.span}>-СТАТУС</span></div>
+                      <div className={styles.subtitle}>Для тех, кто хочет большего</div>
+                      <div className={styles.description}>
+                        Prime-подписка на нашем Minecraft сервере предлагает уникальные преимущества, которые делают игровой процесс еще более увлекательным и комфортным. Никаких ожиданий после смерти, уникальные предметы персонализации, приоритетная поддержка и многое другое!
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
