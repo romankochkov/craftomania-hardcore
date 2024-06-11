@@ -70,7 +70,6 @@
 
 .welcome {
   position: relative;
-  height: 100vh;
   z-index: 1;
 }
 
@@ -207,7 +206,7 @@
 .welcome .state {
   position: relative;
   height: calc(100% - 103px);
-  background: linear-gradient(to top, #242424 25%, rgb(203, 14, 14) 100%);
+  background: linear-gradient(to top, #242424 30%, rgb(203, 14, 14) 100%);
   border-radius: 10px;
   padding-top: 40px;
   padding-left: 40px;
@@ -235,26 +234,94 @@
 
 .welcome .state .picture {
   width: 100%;
-  height: 120px;
+  height: 194px;
   position: relative;
   background-image: url('/phase-2.jpg');
   background-size: cover;
   background-position: 50% 50%;
   border-radius: 12px;
-  border: 3px solid #fff;
+  border: 2px solid #424242;
+}
+
+.welcome .state .players {
+  background-color: #393939;
+  border-radius: 40px;
+  border: 2px solid #424242;
+  color: #eeeeee;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 8px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 10px;
+  margin-top: 84px;
+  display: inline-flex;
+}
+
+.welcome .state .players i {
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.welcome .state .time {
+  background-color: #393939;
+  border-radius: 40px;
+  border: 2px solid #424242;
+  color: #eeeeee;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 8px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 10px;
+  margin-top: 84px;
+  margin-left: 13px;
+  display: inline-flex;
+}
+
+.welcome .state .time i {
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1px;
+  margin-right: 8px;
 }
 
 .prime {
+  position: relative;
   background-color: #242424;
   border-radius: 10px;
   box-shadow: 0px -0.5px 2px rgb(255, 255, 255, 0.2);
   padding-top: 40px;
   padding-left: 40px;
   padding-right: 40px;
-  padding-bottom: 50px;
-  margin-top: 300px;
+  padding-bottom: 55px;
+  margin-top: 200px;
   margin-bottom: 100px;
   z-index: 1;
+}
+
+.prime .icon {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  width: 30px;
+  height: 30px;
+  background-color: #393939;
+  border: 2px solid #424242;
+  border-radius: 5px;
+}
+
+.prime .icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #898989;
 }
 
 .prime .title {

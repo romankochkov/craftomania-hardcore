@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@awesome.me/kit-7a9092486b": "^1.0.16",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "bootstrap": "^5.3.3",
     "next": "14.2.3",
     "react": "^18",

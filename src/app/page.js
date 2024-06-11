@@ -1,18 +1,19 @@
 import Head from 'next/head';
 import Image from "next/image";
 import 'bootstrap/dist/css/bootstrap-grid.css';
+import '@awesome.me/kit-7a9092486b/icons/css/all.css'
 import styles from "./page.module.css";
 import './bootstrap.css';
+
+
+export const metadata = {
+  title: 'Hardcore - сложный сервер майнкрафт | Craftomania',
+}
+
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Моя страница</title>
-        <meta name="description" content="Craftomania | Hardcore" />
-        <meta name="keywords" content="ключевые слова, для, seo" />
-      </Head>
-
       <main className={styles.main}>
         <Image
           className={styles.background}
@@ -91,9 +92,9 @@ export default function Home() {
                 <div className={styles.state}>
                   <div className={styles.title}>ФАЗА II</div>
                   <div className={styles.subtitle}>Восстание мертвецов</div>
-                  <div className={styles.picture}>
-
-                  </div>
+                  <div className={styles.picture}></div>
+                  <div className={styles.players}><i className="fa-solid fa-user"></i>10 игроков</div>
+                  <div className={styles.time}><i className="fa-solid fa-sun"></i>Рассвет</div>
                 </div>
               </div>
 
@@ -107,6 +108,7 @@ export default function Home() {
               <div className="col-5"></div>
               <div className="col-12">
                 <div className={styles.prime}>
+                  <div className={styles.icon}><i className="fa-solid fa-coins"></i></div>
                   <div className="row g-0">
                     <div className="col-4">
 
