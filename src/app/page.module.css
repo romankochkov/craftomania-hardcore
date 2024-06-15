@@ -353,6 +353,48 @@
   font-family: 'TT Norms Pro', sans-serif;
 }
 
+.footer {
+  background-color: #1d1d1d;
+  padding-top: 40px;
+}
+
+.footer .title {
+  color: #b1b1b1;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-weight: 900;
+  font-size: 340%;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-left: -2px;
+  margin-bottom: 5px;
+}
+
+.footer .precaution {
+  color: #898989;
+  width: 480px;
+  font-weight: 400;
+  font-size: 80%;
+}
+
+.footer .copyright {
+  border-top: 1px solid #3a3a3a;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 60px;
+}
+
+.footer .copyright .info {
+  color: #656565;
+  font-size: 14px;
+  display: inline-flex;
+}
+
+.footer .copyright .language {
+  color: #656565;
+  font-size: 14px;
+  display: inline-flex;
+}
+
 @keyframes pulse {
   from {
     transform: scale(0.5);

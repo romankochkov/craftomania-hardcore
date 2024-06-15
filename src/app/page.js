@@ -126,6 +126,25 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <footer className={styles.footer}>
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <div className={styles.title}>Hardcore</div>
+                <div className={styles.precaution}>Права на игру Minecraft принадлежат Mojang Studios и никак не связаны с Hardcore. Вебсайт hardcore.craftomania.net не относится к Mojang Studios.</div>
+              </div>
+              <div className="col-12">
+                <div className={styles.copyright}>
+                  <div className="d-flex justify-content-between">
+                    <div className={styles.info}>© Craftomania Hardcore, 2024</div>
+                    <div className={styles.language}>RU</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
       </main>
 
     </>
