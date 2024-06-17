@@ -66,7 +66,7 @@ export default function Home() {
 
               </div>
               <div className="col-6">
-                <div className="d-flex justify-content-center">
+                <div className="d-flex justify-content-center" style={{ position: 'relative' }}>
                   <Image
                     className={styles.picture}
                     src="/welcome.png"
@@ -74,6 +74,7 @@ export default function Home() {
                     height={580}
                     alt="Welcome"
                     quality={100} />
+                  <div className={styles.glow}></div>
                 </div>
               </div>
 
@@ -111,15 +112,133 @@ export default function Home() {
                   <div className={styles.icon}><i className="fa-solid fa-coins"></i></div>
                   <div className="row g-0">
                     <div className="col-4">
+                      <div className="d-flex justify-content-center">
+                        <Image
+                          className={styles.picture}
+                          src="/prime.png"
+                          width={320}
+                          height={320}
+                          alt="Prime"
+                          quality={100} />
+                      </div>
 
                     </div>
                     <div className="col-8">
                       <div className={styles.title}>PRIME<span className={styles.span}>-СТАТУС</span></div>
-                      <div className={styles.subtitle}>Для тех, кто хочет большего</div>
+                      <div className={styles.subtitle}>для тех, кто хочет большего</div>
                       <div className={styles.description}>
                         Prime-подписка на нашем Minecraft сервере предлагает уникальные преимущества, которые делают игровой процесс еще более увлекательным и комфортным. Никаких ожиданий после смерти, уникальные предметы персонализации, приоритетная поддержка и многое другое!
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.reviews}>
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <div className={styles.title}>Отзывы пользователей</div>
+              </div>
+              <div className="col-6 col-md-3">
+                <div className={styles.review}>
+                  <div>
+                    <Image
+                      className={styles.avatar}
+                      src="/review-avatar.png"
+                      width={44}
+                      height={44}
+                      alt="Avatar"
+                      quality={80} />
+                    <div className="d-inline-flex flex-column" style={{ verticalAlign: 'top' }}>
+                      <div className={styles.name}>Tortik228</div>
+                      <div className={styles.rank}>Игрок</div>
+                    </div>
+                  </div>
+                  <div className={styles.description}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </div>
+                  <div className={styles.grade}>
+                    <i className="fa-solid fa-star"></i>
+                    <p>5.0</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-6 col-md-3">
+                <div className={styles.review} style={{ background: 'transparent' }}>
+                  <div>
+                    <Image
+                      className={styles.avatar}
+                      src="/review-avatar.png"
+                      width={44}
+                      height={44}
+                      alt="Avatar"
+                      quality={80} />
+                    <div className="d-inline-flex flex-column" style={{ verticalAlign: 'top' }}>
+                      <div className={styles.name}>Tortik228</div>
+                      <div className={styles.rank}>Игрок</div>
+                    </div>
+                  </div>
+                  <div className={styles.description}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </div>
+                  <div className={styles.grade}>
+                    <i className="fa-solid fa-star"></i>
+                    <p>5.0</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-6 col-md-3">
+                <div className={styles.review} style={{ background: 'transparent' }}>
+                  <div>
+                    <Image
+                      className={styles.avatar}
+                      src="/review-avatar.png"
+                      width={44}
+                      height={44}
+                      alt="Avatar"
+                      quality={80} />
+                    <div className="d-inline-flex flex-column" style={{ verticalAlign: 'top' }}>
+                      <div className={styles.name}>Tortik228</div>
+                      <div className={styles.rank}>Игрок</div>
+                    </div>
+                  </div>
+                  <div className={styles.description}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </div>
+                  <div className={styles.grade}>
+                    <i className="fa-solid fa-star"></i>
+                    <p>5.0</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-6 col-md-3">
+                <div className={styles.review} style={{ background: 'transparent' }}>
+                  <div>
+                    <Image
+                      className={styles.avatar}
+                      src="/review-avatar.png"
+                      width={44}
+                      height={44}
+                      alt="Avatar"
+                      quality={80} />
+                    <div className="d-inline-flex flex-column" style={{ verticalAlign: 'top' }}>
+                      <div className={styles.name}>Tortik228</div>
+                      <div className={styles.rank}>Игрок</div>
+                    </div>
+                  </div>
+                  <div className={styles.description}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </div>
+                  <div className={styles.grade}>
+                    <i className="fa-solid fa-star"></i>
+                    <p>5.0</p>
                   </div>
                 </div>
               </div>
@@ -133,6 +252,11 @@ export default function Home() {
               <div className="col-12">
                 <div className={styles.title}>Hardcore</div>
                 <div className={styles.precaution}>Права на игру Minecraft принадлежат Mojang Studios и никак не связаны с Hardcore. Вебсайт hardcore.craftomania.net не относится к Mojang Studios.</div>
+                <div className={styles.social}>
+                  <div className={styles.discord}><i className="fa-brands fa-discord"></i></div>
+                  <div className={styles.youtube}><i className="fa-brands fa-youtube"></i></div>
+                  <div className={styles.tiktok}><i className="fa-brands fa-tiktok"></i></div>
+                </div>
               </div>
               <div className="col-12">
                 <div className={styles.copyright}>
