@@ -148,11 +148,11 @@ export default function Home() {
                   <div>
                     <Image
                       className={styles.avatar}
-                      src="/review-avatar.png"
+                      src="/review-avatar-1.png"
                       width={44}
                       height={44}
                       alt="Avatar"
-                      quality={80} />
+                      quality={60} />
                     <div className="d-inline-flex flex-column" style={{ verticalAlign: 'top' }}>
                       <div className={styles.name}>Tortik228</div>
                       <div className={styles.rank}>Игрок</div>
@@ -173,13 +173,13 @@ export default function Home() {
                   <div>
                     <Image
                       className={styles.avatar}
-                      src="/review-avatar.png"
+                      src="/review-avatar-2.png"
                       width={44}
                       height={44}
                       alt="Avatar"
-                      quality={80} />
+                      quality={60} />
                     <div className="d-inline-flex flex-column" style={{ verticalAlign: 'top' }}>
-                      <div className={styles.name}>Tortik228</div>
+                      <div className={styles.name}>BlockMaster</div>
                       <div className={styles.rank}>Игрок</div>
                     </div>
                   </div>
@@ -198,13 +198,13 @@ export default function Home() {
                   <div>
                     <Image
                       className={styles.avatar}
-                      src="/review-avatar.png"
+                      src="/review-avatar-3.png"
                       width={44}
                       height={44}
                       alt="Avatar"
-                      quality={80} />
+                      quality={60} />
                     <div className="d-inline-flex flex-column" style={{ verticalAlign: 'top' }}>
-                      <div className={styles.name}>Tortik228</div>
+                      <div className={styles.name}>QuantumCrafter_</div>
                       <div className={styles.rank}>Игрок</div>
                     </div>
                   </div>
@@ -223,13 +223,13 @@ export default function Home() {
                   <div>
                     <Image
                       className={styles.avatar}
-                      src="/review-avatar.png"
+                      src="/review-avatar-4.png"
                       width={44}
                       height={44}
                       alt="Avatar"
-                      quality={80} />
+                      quality={60} />
                     <div className="d-inline-flex flex-column" style={{ verticalAlign: 'top' }}>
-                      <div className={styles.name}>Tortik228</div>
+                      <div className={styles.name}>Vitalik2015</div>
                       <div className={styles.rank}>Игрок</div>
                     </div>
                   </div>
