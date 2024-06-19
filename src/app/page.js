@@ -159,7 +159,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className={styles.description}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Этот сервер превзошел все мои ожидания! Удивительно, как здесь все продумано до мелочей: от дизайна спавна до организации ивентов.
                   </div>
                   <div className={styles.grade}>
                     <i className="fa-solid fa-star"></i>
@@ -184,7 +184,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className={styles.description}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Приятно видеть, что админы активно слушают игроков и внедряют их идеи. Очень понравилась система наград, которая мотивирует играть.
                   </div>
                   <div className={styles.grade}>
                     <i className="fa-solid fa-star"></i>
@@ -209,7 +209,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className={styles.description}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Сразу чувствуется, что админы вкладывают душу в развитие проекта. Очень радует отсутствие лагов и постоянная работа над улучшением сервера.
                   </div>
                   <div className={styles.grade}>
                     <i className="fa-solid fa-star"></i>
@@ -234,7 +234,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className={styles.description}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Я играю здесь уже несколько месяцев, и каждый раз открываю для себя что-то новое. Игроки на сервере очень дружелюбные, что несомненно радует.
                   </div>
                   <div className={styles.grade}>
                     <i className="fa-solid fa-star"></i>
