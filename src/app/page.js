@@ -51,7 +51,7 @@ export default function Home() {
         <section className={styles.welcome}>
           <div className="container">
             <div className="row">
-              <div className="col-6">
+              <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                 <div className={styles.label}>—&nbsp;&nbsp;-&nbsp;&nbsp;Craftomania</div>
                 <h1>Hardcore</h1>
                 <h2>Умри, живи и снова умри</h2>
@@ -59,13 +59,13 @@ export default function Home() {
                 <div>
                   <div className={styles.ip}>
                     <div className={styles.host}>mc.craftomania.net</div>
-                    <div className={styles.version}>1.20.6</div>
+                    <div className={styles.version}>1.20.1</div>
                   </div>
                   {/*<span className={styles.online}></span>*/}
                 </div>
 
               </div>
-              <div className="col-6">
+              <div className="d-none d-md-block col-md-6 col-lg-6">
                 <div className="d-flex justify-content-center" style={{ position: 'relative' }}>
                   <Image
                     className={styles.picture}
@@ -78,7 +78,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="col-6">
+              <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                 <div className={styles.briefly}>
                   <div className={styles.title}>Разрушительный мир анархии!</div>
                   <div className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
@@ -89,7 +89,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="col-6">
+              <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                 <div className={styles.state}>
                   <div className={styles.title}>ФАЗА II</div>
                   <div className={styles.subtitle}>Восстание мертвецов</div>
@@ -195,7 +195,7 @@ export default function Home() {
               <div className="col-12">
                 <div className={styles.title}>Отзывы пользователей</div>
               </div>
-              <div className="col-6 col-md-3">
+              <div className="col-12 col-sm-6 col-md-3">
                 <div className={styles.review}>
                   <div>
                     <Image
@@ -220,7 +220,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="col-6 col-md-3">
+              <div className="col-12 col-sm-6 col-md-3">
                 <div className={styles.review} style={{ background: 'transparent' }}>
                   <div>
                     <Image
@@ -245,7 +245,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="col-6 col-md-3">
+              <div className="col-12 col-sm-6 col-md-3">
                 <div className={styles.review} style={{ background: 'transparent' }}>
                   <div>
                     <Image
@@ -270,7 +270,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="col-6 col-md-3">
+              <div className="col-12 col-sm-6 col-md-3">
                 <div className={styles.review} style={{ background: 'transparent' }}>
                   <div>
                     <Image
