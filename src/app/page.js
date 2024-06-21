@@ -106,7 +106,6 @@ export default function Home() {
         <section>
           <div className="container">
             <div className="row">
-              <div className="col-5"></div>
               <div className="col-12">
                 <div className={styles.prime}>
                   <div className={styles.icon}><i className="fa-solid fa-coins"></i></div>
@@ -132,6 +131,59 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+              </div>
+
+              <div className="col-12" style={{marginBottom: '100px', paddingLeft: '60px', paddingRight: '60px'}}>
+                <div className="d-flex justify-content-between">
+                  <div className={styles.advantage}>
+                    <div className="d-inline-flex justify-content-start">
+                      <div className={styles.icon}>
+                        <i className="fa-solid fa-dove" style={{top: '46%', fontSize: '38px'}}></i>
+                      </div>
+                      <div className="d-inline-flex flex-column">
+                        <div className={styles.title}>/fly</div>
+                        <div className={styles.subtitle}>возможность летать в лобби</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className={styles.advantage}>
+                    <div className="d-inline-flex justify-content-start">
+                      <div className={styles.icon}>
+                      <i className="fa-solid fa-face-cowboy-hat"></i>
+                      </div>
+                      <div className="d-inline-flex flex-column">
+                        <div className={styles.title}>20+</div>
+                        <div className={styles.subtitle}>уникальных аксессуаров</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className={styles.advantage}>
+                    <div className="d-inline-flex justify-content-start">
+                      <div className={styles.icon}>
+                      <i className="fa-solid fa-hourglass-half" style={{fontSize: '36px'}}></i>
+                      </div>
+                      <div className="d-inline-flex flex-column">
+                        <div className={styles.title}>0 секунд</div>
+                        <div className={styles.subtitle}>больше никаких ожиданий</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className={styles.advantage}>
+                    <div className="d-inline-flex justify-content-start">
+                      <div className={styles.icon}>
+                      <i className="fa-solid fa-handshake-angle" style={{fontSize: '38px'}}></i>
+                      </div>
+                      <div className="d-inline-flex flex-column">
+                        <div className={styles.title}>Помощь</div>
+                        <div className={styles.subtitle}>перманентная поддержка</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -159,7 +211,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className={styles.description}>
-                  Этот сервер превзошел все мои ожидания! Удивительно, как здесь все продумано до мелочей: от дизайна спавна до организации ивентов.
+                    Этот сервер превзошел все мои ожидания! Удивительно, как здесь все продумано до мелочей: от дизайна спавна до организации ивентов.
                   </div>
                   <div className={styles.grade}>
                     <i className="fa-solid fa-star"></i>
@@ -184,7 +236,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className={styles.description}>
-                  Приятно видеть, что админы активно слушают игроков и внедряют их идеи. Очень понравилась система наград, которая мотивирует играть.
+                    Приятно видеть, что админы активно слушают игроков и внедряют их идеи. Очень понравилась система наград, которая мотивирует играть.
                   </div>
                   <div className={styles.grade}>
                     <i className="fa-solid fa-star"></i>
@@ -209,7 +261,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className={styles.description}>
-                  Сразу чувствуется, что админы вкладывают душу в развитие проекта. Очень радует отсутствие лагов и постоянная работа над улучшением сервера.
+                    Сразу чувствуется, что админы вкладывают душу в развитие проекта. Очень радует отсутствие лагов и постоянная работа над улучшением сервера.
                   </div>
                   <div className={styles.grade}>
                     <i className="fa-solid fa-star"></i>
@@ -234,7 +286,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className={styles.description}>
-                  Я играю здесь уже несколько месяцев, и каждый раз открываю для себя что-то новое. Игроки на сервере очень дружелюбные, что несомненно радует.
+                    Я играю здесь уже несколько месяцев, и каждый раз открываю для себя что-то новое. Игроки на сервере очень дружелюбные, что несомненно радует.
                   </div>
                   <div className={styles.grade}>
                     <i className="fa-solid fa-star"></i>
