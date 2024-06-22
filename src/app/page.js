@@ -108,6 +108,20 @@ export default function Home() {
           </div>
         </section>
 
+        <section className={styles.map}>
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <div className={styles.title}>Текущая локация</div>
+              </div>
+
+              <div className="col-12">
+                <iframe src='http://89.43.33.246:8123/'></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section>
           <div className="container">
             <div className="row">

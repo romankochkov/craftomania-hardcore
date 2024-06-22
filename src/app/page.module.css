@@ -342,9 +342,16 @@
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 55px;
-  margin-top: 200px;
+  margin-top: 80px;
   margin-bottom: 50px;
+  transition: 0.2s;
+  cursor: pointer;
+  user-select: none;
   z-index: 1;
+}
+
+.prime:hover {
+  transform: scale(1.05);
 }
 
 .prime .icon {
@@ -439,7 +446,7 @@
 }
 
 .reviews {
-  margin-top: 60px;
+  margin-top: 50px;
   margin-bottom: 120px;
 }
 
@@ -515,6 +522,30 @@
   margin-bottom: 0;
   display: inline-flex;
   vertical-align: top;
+}
+
+.map {
+  position: relative;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  z-index: 1;
+}
+
+.map .title {
+  color: #fff;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 700px;
+  background-color: #242424;
+  border: 2px solid #242424;
+  border-radius: 10px;
 }
 
 .footer {
