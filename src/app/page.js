@@ -29,7 +29,7 @@ export default function Home() {
               <div className="row">
                 <div className="col-12">
                   <div className="d-flex justify-content-between">
-                    <div style={{height: '46px'}}>
+                    <div style={{ height: '46px' }}>
                       <Image
                         className={styles.logo}
                         src="/logo.png"
@@ -37,8 +37,8 @@ export default function Home() {
                         height={40}
                         alt="Logo"
                         quality={100} />
-                        <div className={styles.separator}></div>
-                        <div className={styles.title}><a href='/'>Hardcore</a></div>
+                      <div className={styles.separator}></div>
+                      <div className={styles.title}><a href='/'>Hardcore</a></div>
                     </div>
 
                     <div className="d-flex justify-content-end">
@@ -304,15 +304,47 @@ export default function Home() {
         </section>
 
         <footer className={styles.footer}>
+          <Image
+            className={styles.background1}
+            src="/wallpaper.jpg"
+            width={100}
+            height={100}
+            alt="Background"
+            quality={50} />
+
+          <Image
+            className={styles.background2}
+            src="/wallpaper.jpg"
+            width={100}
+            height={100}
+            alt="Background"
+            quality={50} />
+
           <div className="container">
             <div className="row">
-              <div className="col-12">
+              <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                 <div className={styles.title}>Hardcore</div>
                 <div className={styles.precaution}>Права на игру Minecraft принадлежат Mojang Studios и никак не связаны с Hardcore. Вебсайт hardcore.craftomania.net не относится к Mojang Studios.</div>
                 <div className={styles.social}>
                   <div className={styles.discord}><i className="fa-brands fa-discord"></i></div>
                   <div className={styles.youtube}><i className="fa-brands fa-youtube"></i></div>
                   <div className={styles.tiktok}><i className="fa-brands fa-tiktok"></i></div>
+                </div>
+              </div>
+              <div className="col-12 col-sm-12 col-md-6 col-lg-6">
+                <div className="d-flex justify-content-end">
+                  <div className="d-flex flex-column" style={{ marginRight: '100px' }}>
+                    <div className={styles.chapter}>Платформа</div>
+                    <div className={styles.link}><a href='/'>Главная</a></div>
+                    <div className={styles.link}><a href='/rules'>Правила</a></div>
+                    <div className={styles.link}><a href='/prime'>Подписка</a></div>
+                  </div>
+                  <div className="d-flex flex-column">
+                    <div className={styles.chapter}>Информация</div>
+                    <div className={styles.link}><a href='/help'>Поддержка</a></div>
+                    <div className={styles.link}><a href='/info'>Подробности</a></div>
+                    <div className={styles.link}><a href='/gratitude'>Благодарности</a></div>
+                  </div>
                 </div>
               </div>
               <div className="col-12">
