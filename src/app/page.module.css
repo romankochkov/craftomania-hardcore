@@ -27,6 +27,37 @@
 .header .nav .logo {
   width: auto;
   height: 46px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.header .nav .separator {
+  width: 2px;
+  height: 40px;
+  position: relative;
+  background: #323232;
+  border-radius: 40px;
+  margin-top: 3px;
+  display: inline-flex;
+  vertical-align: top;
+}
+
+.header .nav .title {
+  position: relative;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 4.5px;
+  margin-left: 20px;
+  display: inline-flex;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.header .nav .title a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .header .nav .rules {

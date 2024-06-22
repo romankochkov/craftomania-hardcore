@@ -29,13 +29,18 @@ export default function Home() {
               <div className="row">
                 <div className="col-12">
                   <div className="d-flex justify-content-between">
-                    <Image
-                      className={styles.logo}
-                      src="/logo.gif"
-                      width={200}
-                      height={40}
-                      alt="Logo"
-                      quality={100} />
+                    <div style={{height: '46px'}}>
+                      <Image
+                        className={styles.logo}
+                        src="/logo.png"
+                        width={200}
+                        height={40}
+                        alt="Logo"
+                        quality={100} />
+                        <div className={styles.separator}></div>
+                        <div className={styles.title}><a href='/'>Hardcore</a></div>
+                    </div>
+
                     <div className="d-flex justify-content-end">
                       <div className={styles.rules}>Правила</div>
                       <div className={styles.button}>Начать играть</div>
@@ -133,12 +138,12 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="col-12" style={{marginBottom: '100px', paddingLeft: '60px', paddingRight: '60px'}}>
+              <div className="col-12" style={{ marginBottom: '100px', paddingLeft: '60px', paddingRight: '60px' }}>
                 <div className="d-flex justify-content-between">
                   <div className={styles.advantage}>
                     <div className="d-inline-flex justify-content-start">
                       <div className={styles.icon}>
-                        <i className="fa-solid fa-dove" style={{top: '46%', fontSize: '38px'}}></i>
+                        <i className="fa-solid fa-dove" style={{ top: '46%', fontSize: '38px' }}></i>
                       </div>
                       <div className="d-inline-flex flex-column">
                         <div className={styles.title}>/fly</div>
@@ -150,7 +155,7 @@ export default function Home() {
                   <div className={styles.advantage}>
                     <div className="d-inline-flex justify-content-start">
                       <div className={styles.icon}>
-                      <i className="fa-solid fa-face-cowboy-hat"></i>
+                        <i className="fa-solid fa-face-cowboy-hat"></i>
                       </div>
                       <div className="d-inline-flex flex-column">
                         <div className={styles.title}>20+</div>
@@ -162,7 +167,7 @@ export default function Home() {
                   <div className={styles.advantage}>
                     <div className="d-inline-flex justify-content-start">
                       <div className={styles.icon}>
-                      <i className="fa-solid fa-hourglass-half" style={{fontSize: '36px'}}></i>
+                        <i className="fa-solid fa-hourglass-half" style={{ fontSize: '36px' }}></i>
                       </div>
                       <div className="d-inline-flex flex-column">
                         <div className={styles.title}>0 секунд</div>
@@ -174,7 +179,7 @@ export default function Home() {
                   <div className={styles.advantage}>
                     <div className="d-inline-flex justify-content-start">
                       <div className={styles.icon}>
-                      <i className="fa-solid fa-handshake-angle" style={{fontSize: '38px'}}></i>
+                        <i className="fa-solid fa-handshake-angle" style={{ fontSize: '38px' }}></i>
                       </div>
                       <div className="d-inline-flex flex-column">
                         <div className={styles.title}>Помощь</div>
