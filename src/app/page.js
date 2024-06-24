@@ -8,6 +8,10 @@ import './bootstrap.css';
 
 export const metadata = {
   title: 'Hardcore - сложный сервер майнкрафт | Craftomania',
+  authors: [{ name: 'Roman K', url: 'https://github.com/romankochkov' }],
+  creator: 'Craftomania',
+  publisher: 'Craftomania',
+  keywords: ['Майнкрафт', 'Minecraft', 'Крафтомания', 'Craftomania'],
 }
 
 
@@ -63,6 +67,7 @@ export default function Home() {
                 <h4>Данный лозунг используется исключительно в контексте<br></br>игрового проекта и не несет никакого призыва к действию</h4>
                 <div>
                   <div className={styles.ip}>
+                    <i className="fa-solid fa-copy"></i>
                     <div className={styles.host}>mc.craftomania.net</div>
                     <div className={styles.version}>1.20.1</div>
                   </div>
