@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import Image from "next/image";
-import CopyIP from '../components/copy-ip.js';
 import NavButtons from '../components/nav-buttons.js';
+import PrimeBlock from '../components/prime.js';
+import CopyIP from '../components/copy-ip.js';
 import 'bootstrap/dist/css/bootstrap-grid.css';
 import '@awesome.me/kit-7a9092486b/icons/css/all.css'
 import styles from "./page.module.css";
@@ -115,7 +116,7 @@ export default function Home() {
               </div>
 
               <div className="col-12">
-                <iframe src='http://89.43.33.246:8123/'></iframe>
+                <iframe src='http://89.43.33.246:8100/#world:-212:0:85:667:0:0:0:0:perspective'></iframe>
               </div>
             </div>
           </div>
@@ -125,30 +126,7 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <div className={styles.prime}>
-                  <div className={styles.icon}><i className="fa-solid fa-coins"></i></div>
-                  <div className="row g-0">
-                    <div className="col-4">
-                      <div className="d-flex justify-content-center">
-                        <Image
-                          className={styles.picture}
-                          src="/prime.png"
-                          width={320}
-                          height={320}
-                          alt="Prime"
-                          quality={100} />
-                      </div>
-
-                    </div>
-                    <div className="col-8">
-                      <div className={styles.title}>PRIME<span className={styles.span}>-СТАТУС</span></div>
-                      <div className={styles.subtitle}>для тех, кто хочет большего</div>
-                      <div className={styles.description}>
-                        Prime-подписка на нашем Minecraft сервере предлагает уникальные преимущества, которые делают игровой процесс еще более увлекательным и комфортным. Никаких ожиданий после смерти, уникальные предметы персонализации, приоритетная поддержка и многое другое!
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <PrimeBlock/>
               </div>
 
               <div className="col-12" style={{ marginBottom: '100px', paddingLeft: '60px', paddingRight: '60px' }}>
