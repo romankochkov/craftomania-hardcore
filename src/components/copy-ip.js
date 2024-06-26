@@ -13,7 +13,7 @@ const CopyIP = () => {
     return (
         <div className={styles.ip} onClick={copyToClipboard}>
             <i className="fa-solid fa-copy"></i>
-            <div className={styles.host}>mc.craftomania.net</div>
+            <div className={styles.host}>mc.ultrahardcore.net</div>
             <div className={styles.version}>1.20.1</div>
         </div>
     );
