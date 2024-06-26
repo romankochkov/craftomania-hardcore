@@ -1,0 +1,327 @@
+.main {
+  position: relative;
+  margin: 0;
+}
+
+.main .background {
+  opacity: 0.18;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+.header {
+  position: relative;
+  height: 170px;
+}
+
+.header .nav {
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.05);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header .nav .logo {
+  width: auto;
+  height: 46px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.header .nav .separator {
+  width: 2px;
+  height: 40px;
+  position: relative;
+  background: #323232;
+  border-radius: 40px;
+  margin-top: 3px;
+  display: inline-flex;
+  vertical-align: top;
+}
+
+.header .nav .title {
+  position: relative;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 4.5px;
+  margin-left: 20px;
+  display: inline-flex;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.header .nav .title a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header .nav .rules {
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  color: #a8a8a8;
+  text-decoration: underline;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-right: 26px;
+  cursor: pointer;
+}
+
+.header .nav .rules:hover {
+  color: rgb(197, 8, 8);
+}
+
+.header .nav .button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 40px;
+  color: #2e2e2e;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 12px;
+  cursor: pointer;
+}
+
+.header .nav .button:hover {
+  color: rgb(197, 8, 8);
+}
+
+.page {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  z-index: 1;
+}
+
+.page .card {
+  position: relative;
+  background-color: #242424;
+  border-radius: 10px;
+  box-shadow: 0px -0.5px 2px rgb(255, 255, 255, 0.2);
+  padding: 30px;
+  z-index: 1;
+}
+
+.page .card .list {
+  background: #ffffff;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+}
+
+.page .card .list .title {
+  color: #202020;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.page .card .list .text {
+  color: #666666;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.footer {
+  position: relative;
+  background-color: #1c1c1c;
+  padding-top: 50px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.footer .background1 {
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: auto;
+  user-select: none;
+  z-index: 0;
+}
+
+.footer .background2 {
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: auto;
+  user-select: none;
+  z-index: 0;
+}
+
+.footer .title {
+  position: relative;
+  color: #b1b1b1;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-weight: 900;
+  font-size: 425%;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-left: -3px;
+  margin-bottom: 5px;
+  z-index: 1;
+}
+
+.footer .precaution {
+  width: 440px;
+  position: relative;
+  color: #898989;
+  font-weight: 400;
+  font-size: 70%;
+  z-index: 1;
+}
+
+.footer .social {
+  position: relative;
+  margin-top: 40px;
+  z-index: 1;
+}
+
+.footer .social .discord {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  background: #383838;
+  border-radius: 50%;
+  margin-right: 18px;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.footer .social .discord:hover {
+  background: #4e4e4e;
+}
+
+.footer .social .discord i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #b1b1b1;
+}
+
+.footer .social .youtube {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  background: #383838;
+  border-radius: 50%;
+  margin-right: 18px;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.footer .social .youtube:hover {
+  background: #4e4e4e;
+}
+
+.footer .social .youtube i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #b1b1b1;
+}
+
+.footer .social .tiktok {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  background: #383838;
+  border-radius: 50%;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.footer .social .tiktok:hover {
+  background: #4e4e4e;
+}
+
+.footer .social .tiktok i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #b1b1b1;
+}
+
+.footer .chapter {
+  color: #545454;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: solid underline #545454 2px;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
+.footer .link {
+  position: relative;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.footer .link a {
+  color: #b1b1b1;
+  text-decoration: none;
+}
+
+.footer .link a:hover {
+  text-decoration: underline;
+}
+
+.footer .copyright {
+  position: relative;
+  border-top: 1px solid #3a3a3a;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 80px;
+}
+
+.footer .copyright .info {
+  color: #565656;
+  font-size: 14px;
+  display: inline-flex;
+}
+
+.footer .copyright .language {
+  color: #565656;
+  font-size: 14px;
+  display: inline-flex;
+}
+
+@media (max-width: 576px) {
+  .page .card {
+    padding: 15px;
+  }
+
+  .page .card .list {
+    border-radius: 6px;
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+  }
+}
