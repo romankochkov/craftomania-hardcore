@@ -101,7 +101,7 @@
 
 .comparison {
   position: relative;
-  margin-top: 100px;
+  margin-top: 60px;
   margin-bottom: 90px;
   z-index: 1;
 }
@@ -190,6 +190,38 @@
   align-self: center;
 }
 
+.comparison .cellnamepicture {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #303030;
+  border-bottom: 1.5px solid #3e3e3e;
+  display: flex;
+}
+
+.comparison .cellcenterpicture {
+  position: relative;
+  background-color: #242424;
+  border-left: 1.5px solid #3e3e3e;
+  border-right: 1.5px solid #3e3e3e;
+  border-bottom: 1.5px solid #3e3e3e;
+  display: flex;
+}
+
+.comparison .cellpicture {
+  position: relative;
+  background-color: #242424;
+  border-bottom: 1.5px solid #3e3e3e;
+  display: flex;
+}
+
+.comparison .picture {
+  width: 100%;
+  height: auto;
+  object-fit: scale-down;
+  box-sizing: border-box;
+}
+
 .purchase {
   margin-bottom: 140px;
 }
@@ -203,6 +235,7 @@
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 55px;
+  margin-bottom: 25px;
   z-index: 1;
 }
 
@@ -232,7 +265,7 @@
   font-weight: 600;
 }
 
-.purchase .buy {
+.purchase .buy1 {
   position: relative;
   background-color: #242424;
   border-radius: 10px;
@@ -244,7 +277,7 @@
   z-index: 1;
 }
 
-.purchase .buy .price {
+.purchase .buy1 .price {
   color: #ffffff;
   font-family: 'TT Norms Pro', sans-serif;
   font-size: 42px;
@@ -252,7 +285,7 @@
   margin-top: -2px;
 }
 
-.purchase .buy .price span {
+.purchase .buy1 .price span {
   color: #aaaaaa;
   font-family: 'TT Norms Pro', sans-serif;
   font-size: 22px;
@@ -260,7 +293,7 @@
   margin-bottom: 0;
 }
 
-.purchase .buy .button {
+.purchase .buy1 .button {
   width: 140px;
   height: 46px;
   position: relative;
@@ -271,24 +304,138 @@
   cursor: pointer;
 }
 
-.purchase .buy .button div {
+.purchase .buy1 .button div {
   position: absolute;
-  top: 47%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffffff;
   font-family: 'TT Norms Pro', sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-.purchase .buy .button:hover {
+.purchase .buy1 .button:hover {
   background-color: #2e8ec2;
+}
+
+.purchase .separator {
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+  padding-bottom: 13px;
+  display: inline-flex;
+  box-sizing: border-box;
+}
+
+.purchase .separator .leftline {
+  width: calc(50% - 30px);
+  height: 2px;
+  background: #484848;
+  border-radius: 50px;
+  margin-top: 13px;
+  margin-right: auto;
+  display: inline-flex;
+}
+
+.purchase .separator .or {
+  width: 36px;
+  color: #484848;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  display: inline-flex;
+}
+
+.purchase .separator .rightline {
+  width: calc(50% - 30px);
+  height: 2px;
+  background: #484848;
+  border-radius: 50px;
+  margin-top: 13px;
+  margin-left: auto;
+  display: inline-flex;
+}
+
+.purchase .buy2 {
+  position: relative;
+  background-color: #242424;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px rgb(255, 255, 255, 0.2);
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+  z-index: 1;
+}
+
+.purchase .buy2 .price {
+  position: relative;
+  color: #ffffff;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  margin-top: -2px;
+}
+
+.purchase .buy2 .price span {
+  color: #aaaaaa;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.purchase .buy2 .price .old {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  color: #8b3e3e;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.purchase .buy2 .button {
+  width: 140px;
+  height: 46px;
+  position: relative;
+  background-color: #ff8000;
+  border-radius: 8px;
+  display: inline-flex;
+  user-select: none;
+  cursor: pointer;
+}
+
+.purchase .buy2 .button div {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 5px;
+  display: inline-flex;
+}
+
+.purchase .buy2 .button div i {
+  position: relative;
+  font-size: 14px;
+  margin-left: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.purchase .buy2 .button:hover {
+  background-color: #d36900;
 }
 
 .footer {
   position: relative;
-  background-color: #1c1c1c;
+  background-color: #111111;
   padding-top: 50px;
   overflow: hidden;
   z-index: 1;

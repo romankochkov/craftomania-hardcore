@@ -61,6 +61,32 @@ export default function Home() {
           <div className="container">
             <div className="row g-0" style={{ borderRadius: '10px', boxShadow: '0px 0px 2px rgb(255, 255, 255, 0.2)', overflow: 'hidden' }}>
               <div className="col-4">
+                <div className={styles.cellnamepicture}></div>
+              </div>
+              <div className="col-4">
+                <div className={styles.cellcenterpicture}>
+                  <Image
+                    className={styles.picture}
+                    src="/prime-table-1.png"
+                    width={800}
+                    height={500}
+                    alt="Default"
+                    quality={100} />
+                </div>
+              </div>
+              <div className="col-4">
+                <div className={styles.cellpicture}>
+                  <Image
+                    className={styles.picture}
+                    src="/prime-table-1.png"
+                    width={1200}
+                    height={500}
+                    alt="Default"
+                    quality={100} />
+                </div>
+              </div>
+
+              <div className="col-4">
                 <div className={styles.cellname}></div>
               </div>
               <div className="col-4">
@@ -266,11 +292,26 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-12 col-sm-12 col-md-12 col-lg-5">
-                <div className={styles.buy}>
+                <div className={styles.buy1}>
                   <div className="d-flex justify-content-between">
                     <div className={styles.price}>299₽<span>/90&nbsp;дней</span></div>
                     <div className={styles.button}>
                       <div>Купить</div>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.separator}>
+                  <div className={styles.leftline}></div>
+                  <div className={styles.or}>или</div>
+                  <div className={styles.rightline}></div>
+                </div>
+                <div className={styles.buy2}>
+                  <div className="d-flex justify-content-between">
+                    <div className={styles.price}>999₽<span>/навсегда</span>
+                      <div className={styles.old}>1499₽</div>
+                    </div>
+                    <div className={styles.button}>
+                      <div>Купить <i className="fa-solid fa-fire"></i></div>
                     </div>
                   </div>
                 </div>
@@ -280,21 +321,6 @@ export default function Home() {
         </section>
 
         <footer className={styles.footer}>
-          <Image
-            className={styles.background1}
-            src="/wallpaper.jpg"
-            width={100}
-            height={100}
-            alt="Background"
-            quality={50} />
-
-          <Image
-            className={styles.background2}
-            src="/wallpaper.jpg"
-            width={100}
-            height={100}
-            alt="Background"
-            quality={50} />
 
           <div className="container">
             <div className="row">
