@@ -116,7 +116,7 @@ export default function Home() {
               </div>
 
               <div className="col-12">
-                <iframe src='http://89.43.33.246:8100/#world:-212:0:85:667:0:0:0:0:perspective'></iframe>
+                <iframe src='https://ultrahardcore.net/map/#world:-212:0:85:667:0:0:0:0:perspective'></iframe>
               </div>
             </div>
           </div>
