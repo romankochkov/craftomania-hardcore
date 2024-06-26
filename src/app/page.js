@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Image from "next/image";
+import CopyIP from '../components/copy-ip.js';
+import NavButtons from '../components/nav-buttons.js';
 import 'bootstrap/dist/css/bootstrap-grid.css';
 import '@awesome.me/kit-7a9092486b/icons/css/all.css'
 import styles from "./page.module.css";
@@ -45,11 +47,7 @@ export default function Home() {
                       <div className={styles.title}><a href='/'>Hardcore</a></div>
                     </div>
 
-                    <div className="d-flex justify-content-end">
-                      <div className={styles.rules}>Правила</div>
-                      <div className={styles.button}>Начать играть</div>
-                    </div>
-
+                    <NavButtons/>
                   </div>
                 </div>
               </div>
@@ -66,11 +64,7 @@ export default function Home() {
                 <h2>Умри, живи и снова умри</h2>
                 <h4>Данный лозунг используется исключительно в контексте<br></br>игрового проекта и не несет никакого призыва к действию</h4>
                 <div>
-                  <div className={styles.ip}>
-                    <i className="fa-solid fa-copy"></i>
-                    <div className={styles.host}>mc.craftomania.net</div>
-                    <div className={styles.version}>1.20.1</div>
-                  </div>
+                  <CopyIP/>
                   {/*<span className={styles.online}></span>*/}
                 </div>
 

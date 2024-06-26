@@ -170,6 +170,7 @@
   padding-left: 25px;
   margin-top: 60px;
   display: inline-flex;
+  cursor: pointer;
 }
 
 .welcome .ip i {
@@ -182,7 +183,7 @@
   cursor: pointer;
 }
 
-.welcome .ip i:hover {
+.welcome .ip:hover i {
   color: rgb(197, 8, 8);
 }
 
