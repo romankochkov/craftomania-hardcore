@@ -47,7 +47,7 @@ export default function Home() {
                       <div className={styles.title}><a href='/'>Hardcore</a></div>
                     </div>
 
-                    <NavButtons/>
+                    <NavButtons styles={styles}/>
                   </div>
                 </div>
               </div>

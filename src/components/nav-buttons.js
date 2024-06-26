@@ -2,10 +2,9 @@
 
 import React from 'react';
 import { useRouter } from 'next/navigation'
-import styles from '../app/page.module.css';
 
 
-const NavButtons = () => {
+const NavButtons = ({ styles }) => {
     const router = useRouter()
 
     return (
