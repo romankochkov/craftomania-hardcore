@@ -44,11 +44,14 @@ export default function Home() {
                         height={40}
                         alt="Logo"
                         quality={100} />
-                      <div className={styles.separator}></div>
-                      <div className={styles.title}><a href='/'>Hardcore</a></div>
+                      <div className="d-none d-md-inline-flex" style={{verticalAlign: 'top', marginTop: '3.5px'}}>
+                        <div className={styles.separator}></div>
+                        <div className={styles.title}><a href='/'>Hardcore</a></div>
+                      </div>
+
                     </div>
 
-                    <NavButtons styles={styles}/>
+                    <NavButtons styles={styles} />
                   </div>
                 </div>
               </div>
@@ -64,11 +67,14 @@ export default function Home() {
                 <h1>Hardcore</h1>
                 <h2>Умри, живи и снова умри</h2>
                 <h4>Данный лозунг используется исключительно в контексте<br></br>игрового проекта и не несет никакого призыва к действию</h4>
-                <div>
-                  <CopyIP/>
+                <div className="d-none d-md-block">
+                  <CopyIP />
                   {/*<span className={styles.online}></span>*/}
                 </div>
-
+                <div className="d-flex d-md-none justify-content-center">
+                  <CopyIP />
+                  {/*<span className={styles.online}></span>*/}
+                </div>
               </div>
               <div className="d-none d-md-block col-md-6 col-lg-6">
                 <div className="d-flex justify-content-center" style={{ position: 'relative' }}>
@@ -126,11 +132,11 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <PrimeBlock/>
+                <PrimeBlock />
               </div>
 
               <div className="col-12" style={{ marginBottom: '100px', paddingLeft: '60px', paddingRight: '60px' }}>
-                <div className="d-flex justify-content-between">
+                <div className="d-none d-md-flex justify-content-between">
                   <div className={styles.advantage}>
                     <div className="d-inline-flex justify-content-start">
                       <div className={styles.icon}>
@@ -323,7 +329,22 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-12 col-sm-12 col-md-6 col-lg-6">
-                <div className="d-flex justify-content-end">
+                <div className="d-none d-md-flex justify-content-end">
+                  <div className="d-flex flex-column" style={{ marginRight: '100px' }}>
+                    <div className={styles.chapter}>Платформа</div>
+                    <div className={styles.link}><a href='/'>Главная</a></div>
+                    <div className={styles.link}><a href='/rules'>Правила</a></div>
+                    <div className={styles.link}><a href='/prime'>Подписка</a></div>
+                  </div>
+                  <div className="d-flex flex-column">
+                    <div className={styles.chapter}>Информация</div>
+                    <div className={styles.link}><a href='/help'>Поддержка</a></div>
+                    <div className={styles.link}><a href='/info'>Подробности</a></div>
+                    <div className={styles.link}><a href='/gratitude'>Благодарности</a></div>
+                  </div>
+                </div>
+
+                <div className="d-flex d-md-none justify-content-center">
                   <div className="d-flex flex-column" style={{ marginRight: '100px' }}>
                     <div className={styles.chapter}>Платформа</div>
                     <div className={styles.link}><a href='/'>Главная</a></div>

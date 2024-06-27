@@ -16,6 +16,7 @@
 .header {
   position: relative;
   height: 170px;
+  box-sizing: border-box;
 }
 
 .header .nav {
@@ -37,9 +38,6 @@
   position: relative;
   background: #323232;
   border-radius: 40px;
-  margin-top: 3px;
-  display: inline-flex;
-  vertical-align: top;
 }
 
 .header .nav .title {
@@ -48,10 +46,8 @@
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
-  margin-top: 4.5px;
+  margin-top: 1px;
   margin-left: 20px;
-  display: inline-flex;
-  vertical-align: top;
   cursor: pointer;
 }
 
@@ -245,6 +241,7 @@
   padding-right: 40px;
   padding-bottom: 40px;
   margin-bottom: 22px;
+  box-sizing: border-box;
 }
 
 .welcome .briefly .title {
@@ -262,7 +259,6 @@
 
 .welcome .state {
   position: relative;
-  height: calc(100% - 103px);
   background: linear-gradient(to top, #242424 30%, rgb(203, 14, 14) 100%);
   border-radius: 10px;
   padding-top: 40px;
@@ -270,6 +266,7 @@
   padding-right: 40px;
   padding-bottom: 40px;
   margin-bottom: 22px;
+  box-sizing: border-box;
   z-index: 2;
 }
 
@@ -291,7 +288,7 @@
 
 .welcome .state .picture {
   width: 100%;
-  height: 194px;
+  height: 198px;
   position: relative;
   background-image: url('/phase-2.jpg');
   background-size: cover;
@@ -315,6 +312,7 @@
   padding-bottom: 10px;
   margin-top: 84px;
   display: inline-flex;
+  box-sizing: border-box;
 }
 
 .welcome .state .players i {
@@ -339,6 +337,7 @@
   margin-top: 84px;
   margin-left: 13px;
   display: inline-flex;
+  box-sizing: border-box;
 }
 
 .welcome .state .time i {
@@ -360,6 +359,7 @@
   padding-bottom: 55px;
   margin-top: 80px;
   margin-bottom: 50px;
+  box-sizing: border-box;
   transition: 0.2s;
   cursor: pointer;
   user-select: none;
@@ -392,6 +392,15 @@
 .prime .picture {
   margin-top: -90px;
   margin-bottom: -55px !important;
+}
+
+.prime .picturemobile {
+  position: absolute;
+  bottom: calc(100% + 0.5px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  z-index: 1;
 }
 
 .prime .title {
@@ -485,6 +494,7 @@
   padding-right: 30px;
   padding-bottom: 30px;
   margin-bottom: 20px;
+  box-sizing: border-box;
   z-index: 1;
 }
 
@@ -562,6 +572,7 @@
   background-color: #242424;
   border: 2px solid #242424;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .footer {
@@ -569,6 +580,7 @@
   background-color: #1c1c1c;
   padding-top: 50px;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .footer .background1 {
@@ -627,7 +639,6 @@
   position: relative;
   background: #383838;
   border-radius: 50%;
-  margin-right: 18px;
   display: inline-flex;
   cursor: pointer;
 }
@@ -650,6 +661,7 @@
   position: relative;
   background: #383838;
   border-radius: 50%;
+  margin-left: 18px;
   margin-right: 18px;
   display: inline-flex;
   cursor: pointer;
@@ -746,5 +758,80 @@
   to {
     transform: scale(3);
     opacity: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .header .nav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .welcome .label {
+    font-size: 10px;
+    text-align: center;
+    margin-right: 140px;
+    margin-top: 0;
+  }
+
+  .welcome h1 {
+    font-size: 56px;
+    text-align: center;
+  }
+
+  .welcome h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .welcome h4 {
+    font-size: 8px;
+    text-align: center;
+  }
+
+  .welcome .ip {
+    margin-bottom: 40px;
+  }
+
+  .map .title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .prime {
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 35px;
+    margin-top: 160px;
+    margin-bottom: 0;
+  }
+
+  .prime .icon {
+    display: none;
+  }
+
+  .prime .picturemobile {
+    display: block;
+  }
+
+  .reviews .title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .footer .title {
+    font-size: 56px;
+    text-align: center;
+  }
+
+  .footer .precaution {
+    width: auto;
+    font-size: 4.5px;
+    text-align: center;
+  }
+
+  .footer .social {
+    text-align: center;
   }
 }
