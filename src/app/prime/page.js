@@ -3,7 +3,7 @@ import Image from "next/image";
 import 'bootstrap/dist/css/bootstrap-grid.css';
 import '@awesome.me/kit-7a9092486b/icons/css/all.css'
 import styles from "./page.module.css";
-import './bootstrap.css';
+import '../bootstrap.css';
 
 
 export const metadata = {
