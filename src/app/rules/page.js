@@ -41,7 +41,7 @@ export default function Home() {
                         height={40}
                         alt="Logo"
                         quality={100} />
-                      <div className="d-none d-md-inline-flex">
+                      <div className="d-none d-md-inline-flex" style={{ verticalAlign: 'top', marginTop: '3.5px' }}>
                         <div className={styles.separator}></div>
                         <div className={styles.title}><a href='/'>Hardcore</a></div>
                       </div>
@@ -49,8 +49,12 @@ export default function Home() {
 
                     <div className="d-flex justify-content-end">
                       <div className={styles.button}>Начать играть</div>
+                      <div className="d-block d-md-none">
+                        <div className={styles.sidebar}>
+                          <i className="fa-solid fa-bars"></i>
+                        </div>
+                      </div>
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -61,6 +65,9 @@ export default function Home() {
         <section className={styles.page}>
           <div className="container">
             <div className="row">
+              <div className="col-12 col-sm-12 col-md-12 col-lg-8">
+                <div className={styles.name}>Правила сайта</div>
+              </div>
               <div className="col-12 col-sm-12 col-md-12 col-lg-8">
                 <div className={styles.card}>
                   <div className={styles.list}>
@@ -153,7 +160,22 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-12 col-sm-12 col-md-6 col-lg-6">
-                <div className="d-flex justify-content-end">
+                <div className="d-none d-md-flex justify-content-end">
+                  <div className="d-flex flex-column" style={{ marginRight: '100px' }}>
+                    <div className={styles.chapter}>Платформа</div>
+                    <div className={styles.link}><a href='/'>Главная</a></div>
+                    <div className={styles.link}><a href='/rules'>Правила</a></div>
+                    <div className={styles.link}><a href='/prime'>Подписка</a></div>
+                  </div>
+                  <div className="d-flex flex-column">
+                    <div className={styles.chapter}>Информация</div>
+                    <div className={styles.link}><a href='/help'>Поддержка</a></div>
+                    <div className={styles.link}><a href='/info'>Подробности</a></div>
+                    <div className={styles.link}><a href='/gratitude'>Благодарности</a></div>
+                  </div>
+                </div>
+
+                <div className="d-flex d-md-none justify-content-center">
                   <div className="d-flex flex-column" style={{ marginRight: '100px' }}>
                     <div className={styles.chapter}>Платформа</div>
                     <div className={styles.link}><a href='/'>Главная</a></div>

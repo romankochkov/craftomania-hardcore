@@ -19,7 +19,7 @@
 }
 
 .header .nav {
-  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.15);
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -37,9 +37,6 @@
   position: relative;
   background: #323232;
   border-radius: 40px;
-  margin-top: 3px;
-  display: inline-flex;
-  vertical-align: top;
 }
 
 .header .nav .title {
@@ -48,10 +45,8 @@
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
-  margin-top: 4.5px;
+  margin-top: 1px;
   margin-left: 20px;
-  display: inline-flex;
-  vertical-align: top;
   cursor: pointer;
 }
 
@@ -99,11 +94,38 @@
   color: rgb(197, 8, 8);
 }
 
+.header .sidebar {
+  width: 46px;
+  height: 46px;
+  position: relative;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.header .sidebar i {
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 28px;
+}
+
 .page {
   position: relative;
-  margin-top: 30px;
   margin-bottom: 100px;
   z-index: 1;
+}
+
+.page .name {
+  color: #fff;
+  font-size: 26px;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 
 .page .card {
@@ -313,6 +335,15 @@
 }
 
 @media (max-width: 576px) {
+  .header .nav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .page .name {
+    margin-top: 0;
+  }
+
   .page .card {
     padding: 15px;
   }
@@ -323,5 +354,20 @@
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 10px;
+  }
+
+  .footer .title {
+    font-size: 56px;
+    text-align: center;
+  }
+
+  .footer .precaution {
+    width: auto;
+    font-size: 4.5px;
+    text-align: center;
+  }
+
+  .footer .social {
+    text-align: center;
   }
 }
