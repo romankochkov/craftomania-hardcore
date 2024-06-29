@@ -1,4 +1,4 @@
-# Hardcore
+# UltraHardcore (Minecraft server)
 
 ![DEMO](https://imgur.com/EA6FINs.png)
 
