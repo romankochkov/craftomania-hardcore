@@ -7,7 +7,7 @@ import '../bootstrap.css';
 
 
 export const metadata = {
-  title: 'Hardcore - сложный сервер майнкрафт',
+  title: 'Hardcore - сложный сервер майнкрафт | Правила',
   authors: [{ name: 'Roman K', url: 'https://github.com/romankochkov' }],
   creator: 'Craftomania',
   publisher: 'Craftomania',
