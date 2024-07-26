@@ -575,6 +575,33 @@
   box-sizing: border-box;
 }
 
+.map .screensaver {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  background-color: #1f1f1f;
+  border: 2px solid #242424;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.map .screensaver:hover {
+  background-color: #161616;
+}
+
+.map .screensaver .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.map .screensaver:hover .icon {
+  opacity: 0.7;
+}
+
 .footer {
   position: relative;
   background-color: #1c1c1c;
@@ -798,6 +825,14 @@
     text-align: center;
   }
 
+  .map iframe {
+    height: 300px;
+  }
+
+  .map .screensaver {
+    height: 300px;
+  }
+
   .prime {
     padding-top: 25px;
     padding-left: 15px;
@@ -834,4 +869,5 @@
   .footer .social {
     text-align: center;
   }
+
 }

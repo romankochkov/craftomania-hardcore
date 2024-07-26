@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from "next/image";
 import NavButtons from '../components/nav-buttons.js';
+import MapComponent from '../components/map.js';
 import PrimeBlock from '../components/prime.js';
 import CopyIP from '../components/copy-ip.js';
 import 'bootstrap/dist/css/bootstrap-grid.css';
@@ -44,7 +45,7 @@ export default function Home() {
                         height={40}
                         alt="Logo"
                         quality={100} />
-                      <div className="d-none d-md-inline-flex" style={{verticalAlign: 'top', marginTop: '3.5px'}}>
+                      <div className="d-none d-md-inline-flex" style={{ verticalAlign: 'top', marginTop: '3.5px' }}>
                         <div className={styles.separator}></div>
                         <div className={styles.title}><a href='/'>Hardcore</a></div>
                       </div>
@@ -121,9 +122,7 @@ export default function Home() {
                 <div className={styles.title}>Текущая локация</div>
               </div>
 
-              <div className="col-12">
-                <iframe src='https://ultrahardcore.net/map/#world:-220:0:77:1000:0:0:0:0:perspective' loading='lazy'></iframe>
-              </div>
+              <MapComponent />
             </div>
           </div>
         </section>
