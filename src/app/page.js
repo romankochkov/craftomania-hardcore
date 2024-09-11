@@ -92,12 +92,12 @@ export default function Home() {
 
               <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                 <div className={styles.briefly}>
-                  <div className={styles.title}>Разрушительный мир анархии!</div>
-                  <div className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  <div className={styles.title}>Разрушительный мир анархии 💣</div>
+                  <div className={styles.description}>Ваше выживание зависит только от вашей хитрости, силы и способности строить альянсы. Этот сервер создан для настоящих любителей анархии, где каждый сам решает, кем быть: безжалостным грабителем, мирным фермером или непримиримым воином.</div>
                 </div>
                 <div className={styles.briefly}>
-                  <div className={styles.title}>Разрушительный мир анархии!</div>
-                  <div className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  <div className={styles.title}>Твоя игра, твои правила!</div>
+                  <div className={styles.description}>Вы сами решаете, каким станет ваше приключение: создайте мирный уголок вдали от хаоса или погрузитесь в безжалостную борьбу за ресурсы. На этом сервере важен каждый шаг — каждая ошибка может стать последней.</div>
                 </div>
               </div>
 
